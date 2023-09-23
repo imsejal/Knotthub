@@ -1,0 +1,494 @@
+/* Add this CSS to your styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#3c3939c4;
+}
+
+.sidenav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4d4545;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 50); 
+}
+
+
+.sidenav .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidenav .logo img {
+    width: 100px; /* Adjust the size of the logo as needed */
+}
+
+.sidenav .nav-options {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidenav a:hover {
+    background-color: #333;
+    
+}
+
+.content {
+    margin-left: 120px; /* Width of the sidenav */
+    padding: 20px;
+}
+/* Add this CSS to your styles.css */
+
+.nav-options a span {
+    display: none; /* Hide the button text by default */
+}
+
+.nav-options a:hover span {
+    display: inline-block; /* Show the button text on hover */
+}
+.nav-option img{
+    height:10px;
+}
+
+/* Add more styles as needed for the main content and adjust logo and image sizes as necessary */
+.container-box{
+    height: 90vh; /* 40% of the viewport height */
+    margin-left: 120px; /* Width of the sidenav */
+    background-image: url('music_back.jpg.png');
+    /* background-image: url('concert\ image\ b\ 1.png');  */
+    background-color:aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-left: 120px;
+   
+}
+.topnav{
+    height:8vh;
+    /* background-color: #020202; */
+    
+    margin-right: 20px;
+}
+
+.search-box {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+}
+.search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.notification-button {
+    width: 30px; /* Set the width and height to make it circular */
+    height: 30px;
+    background-color: #f3f0ee; /* Background color of the button */
+    border-radius: 50%; /* Make it circular by setting border-radius to 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a transition effect for hover */
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    
+}
+
+.notification-button:hover {
+    background-color: #8e8a85; /* Change the background color on hover */
+}
+
+/* Style for the notification logo inside the button */
+.notification-button img {
+    width: 24px; /* Set the size of the notification logo */
+    height: 24px;
+    display: block;
+}
+.small-box{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.744);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    margin-left: 38.55%;
+    height: 120px;
+    /* margin-bottom: 10px; */
+}
+
+.smaller-boxes{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(250, 246, 246, 0.893); */
+    width:80vh;
+    height: 170px;
+    margin:10px;
+}
+.little-box{
+    display: flex;
+    justify-content: center;
+    width:65%;
+    height:85%;
+    background-color: #000;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 20); 
+}
+
+.semi-circular-box {
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    width: 30%; /* Set the width of the box */
+    height: 70%; /* Set the height of the box */
+    background-color: #ff6600; /* Background color of the box */
+    border-radius: 0px 90px 90px 0; /* Create the semi-circular shape */
+    overflow: hidden; /* Hide the parts of the background image outside the box */
+    position: relative; /* Needed for absolute positioning of the background image */
+}
+
+
+
+.contentalen{
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    margin-left: 20px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+.contentalen h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+ .contentalen p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a5a9b4;
+    margin: 5px;
+}
+
+ .contentalen .buttons {
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+.contentalen .buttons button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #000000;
+    outline: none;
+    border-radius: 20px;
+    background: #070707;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+ .contentalen .buttons button:hover {
+    background: none;
+    color: #000000;
+}
+
+ .contentalen .buttons button:nth-child(2) {
+    background: none;
+    color: #000000;
+}
+
+ .contentalen .buttons button:nth-child(2):hover {
+    background: #000000;
+    color: #fff;   
+}
+/* 
+.background-images {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.background-image {
+    flex: 0 0 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.small-containers {
+    display: flex;
+    justify-content: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.small-container {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+
+*/
+/* 
+.contentalen {
+    width: 90%;
+    height: 30%;
+    border: 1px solid #fff; 
+    margin: auto;
+    padding-top: 20px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.popular_song {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    margin-top: 46%;
+    /* background-color: #000; */
+    
+    /* border: 1px solid #fff; */
+}
+
+.popular_song .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.popular_song .h4 .bi {
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+ .popular_song .h4 .bi:hover {
+    color: #fff;
+}
+
+ .popular_song .pop_song {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    display: flex;
+    /* border: 1px solid #fff; */
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.popular_song .pop_song::-webkit-scrollbar {
+    display: none;
+}
+
+ .popular_song .pop_song li {
+    min-width: 100px;
+    height: 140px;
+    list-style-type: none;
+    margin-right: 10px;
+    transition: .3s linear;
+}
+
+.popular_song .pop_song li:hover {
+    background: rgb(105, 105, 170, .1);
+}
+
+.popular_song .pop_song li .img_play {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .popular_song .pop_song li .img_play img {
+    width: 100%;
+    height: 100%;
+}
+
+ .popular_song .pop_song li .img_play .bi {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+ .popular_song .pop_song li:hover .img_play .bi {
+    opacity: 1;
+}
+
+ .popular_song .pop_song li h5 {
+    padding: 5px 0px 0px 5px;
+    line-height: 15px;
+    font-size: 10px;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.popular_song .pop_song li h5 .subtitle {
+    font-size: 9px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #4c5262;
+}
+
+
+
+/* footer */
+
+.footer{
+    margin-top:2800px;
+
+}
+.foot-panel1{
+    background-color: #37475a;
+    height:50px;
+    width:100%;
+    color:#f3f3f3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85rem;
+}
+.foot-panel1:hover{
+    background-color: #37475ae8;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    height:350px;
+    width:100%;
+    color:#f3f3f3;
+    text-align: center;
+    justify-content:space-evenly;
+    display:flex;
+    padding-top: 40px;
+}
+.foot-panel2 p{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul a{
+    display:block;
+    font-size: 0.85;
+    color:#dddddd;
+    text-align: left;
+    margin-bottom: 10px;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+
+.foot-panel3{
+    background-color:#222f3d;
+    height:100px;
+    width:100%;
+    border-top:0.3px solid rgba(223, 215, 215, 0.199);
+    color:#f3f3f3;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.logo1 {
+    background-image: url("amazon\ logo3.png");
+    height:50px;
+    width:120px;
+    background-size: cover;
+    margin-bottom: 7px;
+    margin-right:70px;
+
+}
+.language-button{
+    border:2px solid white;
+    height:40px;
+    width:120px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-panel3 p{
+    padding-left: 6px;
+}
+.foot-panel4{
+    background-color: black;
+    padding-top:25px;
+    font-size: 0.9rem;
+    text-align: center;
+    height:70px;
+    width:100%;
+    color:#f3f3f3;
+}
+.pages a{
+    padding-right:10px;
+}
+.pages a:hover{
+    text-decoration: underline;
+}
+.copy{
+    padding-top:6px;
+
+}
