@@ -1,3 +1,8 @@
+# Team Details:
+Anshu Kansal (21BCS3045) => (9528945822)
+Sejal Gupta(21BCS3740)  =>(LEADER) 
+Umesh (21BCS3088) => (805926533)
+
 # Knotthub:
 Music Streaming Website Frontend
 Welcome to the frontend of our Music Streaming Website! KnottHub :)
